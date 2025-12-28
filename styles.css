@@ -11,7 +11,7 @@ body{
 	        height: 50px;
 			width: 50px;
 			display: flex;
-			font-size: 50px;
+			font-size: 60px;
 			cursor: pointer;
 			margin: 50px auto -50px auto;
 			color: red;
@@ -73,4 +73,5 @@ body{
     background: #1c1f2b;
     border-radius: 10px;
 }
+
 	
