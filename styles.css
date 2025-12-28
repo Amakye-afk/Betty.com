@@ -1,0 +1,76 @@
+body{
+    background: url("https://wallpapercave.com/wp/wp2318501.jpg");
+    background-repeat: no-repeat;
+    background-size: ;
+    display: flex;
+    }
+	li{
+	 list-style-type: none;
+	  }
+.teddy{
+	        height: 50px;
+			width: 50px;
+			display: flex;
+			font-size: 50px;
+			cursor: pointer;
+			margin: 50px auto -50px auto;
+			color: red;
+			letter-spacing: 3px;
+			border-radius: 20px;
+			text-shadow: 0 0 15px white,0 0 25px white;
+			animation: animate 1.5s linear infinite;
+		}
+		@keyframes animate{
+			0%{
+				filter: hue-rotate(0deg);
+			}
+			100%{
+				filter: hue-rotate(360deg);
+			}
+		}
+        audio{
+            background-color: black;
+            bottom: 50%;
+            top: 50%;
+            transform: translate(-50% -50%);
+      }
+    @property --angle{
+   syntax: "<angle>";
+   initial-value: 0deg;
+   inherits: false; 
+}
+.box::after, .box::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), blue,green,orange,red,blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+.box::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+     --angle: 0deg;
+    }
+    to{
+     --angle: 360deg;
+    }
+}
+   .box{
+    position: relative;
+    width: 300px;
+    height: 60px;
+	margin:  200px auto 0px auto;
+    background: #1c1f2b;
+    border-radius: 10px;
+}
+	
